@@ -16,6 +16,7 @@ require 'vendor/autoload.php';
 (function () {
     /** @var \Psr\Container\ContainerInterface $container */
     $container = require 'config/container.php';
+    require 'config/bootstrap.php';
 
     /** @var \Mezzio\Application $app */
     $app = $container->get(\Mezzio\Application::class);
